@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table {
+            width: 450px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        thead, tfoot {
+          background-color: gray;  
+          color: white;
+        }
+        .num {
+            text-align: right;
+        }
+        tbody > tr:nth-child(2n) {
+          background-color: lightgray;
+        }
+        tbody > tr:nth-child(2n-1) {
+            background-color: aqua;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0px;
+            background-color: gray;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas</h1>
+    <!--
+        Anatomia de tabelas grandes
+        table
+            thead
+                tr, td, th
+            tbody
+                tr, td, th
+            tfoot
+                tr, td, th            
+    -->
+    <table>
+        <caption>população das unidades federativas</caption>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 150px;">População</th>        
+
+        </thead>
+        <tbody>
+           <tr>
+            <td>São Paulo</td>
+            <td class="num">46 649 132</td>
+           </tr>
+           <tr>
+            <td>Minas Gerais</td>
+            <td class="num">21 411 923</td>
+           </tr>
+           <tr>
+            <td>Rio de Janeiro</td> 
+            <td class="num">17 463 349</td>
+           </tr>
+           <tr>
+            <td>Bahia</td>
+            <td class="num">14 985 284</td>
+           </tr>
+           <tr>
+            <td>Paraná</td>
+            <td class="num">11 597 484</td>
+           </tr>
+           <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num">11 466 630</td>
+           </tr>
+           <tr>
+            <td>pernambuco</td>
+            <td class="num">9 674 793</td>
+           </tr>
+           <tr>
+            <td>Ceará</td>
+            <td class="num">9 240 580</td>
+           </tr>
+           <tr>
+            <td>Pará</td>
+            <td class="num">8 777 124</td>
+           </tr>
+           <tr>
+            <td>Santa Catarina</td>
+            <td class="num">7 338 473</td>
+           </tr>
+           <tr>
+            <td>Goiás</td>
+            <td class="num">7 206 589</td>
+           </tr>
+           <tr>
+            <td>Maranhão</td>
+            <td class="num">7 153 262</td>
+           </tr>
+           <tr>
+            <td>Amazonas</td>
+            <td class="num">4 269 995</td>
+           </tr>
+           <tr>
+            <td>Espirito santo</td>
+            <td class="num">4 108 508</td>
+           </tr>
+           <tr>
+            <td>Paraiba</td>
+            <td class="num">4 059 905</td>
+           </tr>
+           <tr>
+            <td>Mato Grosso</td>
+            <td class="num">3 567 234</td>
+           </tr>
+           <tr>
+            <td>Rio Grande do Norte</td>
+            <td class="num">3 560 903</td>
+           </tr>
+           <tr>
+            <td>Alagoas</td>
+            <td class="num">3 365 351</td>
+           </tr>
+           <tr>
+            <td>Piaui</td>
+            <td class="num">3 289 290</td>
+           </tr>
+           <tr>
+            <td>Distrito Federal</td>
+            <td class="num">3 094 325</td>
+           </tr>
+           <tr>
+            <td>Mato Grosso do Sul</td>
+            <td class="num">2 839 188</td>
+           </tr>
+           <tr>
+            <td>Sergipe</td>
+            <td class="num">2 338 474</td>
+           </tr>
+           <tr>
+            <td>Rondônia</td>
+            <td class="num">1 815 278</td>
+           </tr>
+           <tr>
+            <td>Tocantins</td>
+            <td class="num">1 607 363</td>
+           </tr>
+           <tr>
+            <td>Acre</td>
+            <td class="num">906 876</td>
+           </tr>
+           <tr>
+            <td>Amapá</td>
+            <td class="num">877 613</td>
+           </tr>
+           <tr>
+            <td>Roraima</td>
+            <td class="num">652 713</td>
+           </tr>
+
+        </tbody>
+        <tfoot>
+             <th>Total de habitantes</th>
+             <td class="num">213 317 639</td>
+        </tfoot>
+    </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora nam nobis, nulla laborum inventore tenetur, odit unde ad deleniti laboriosam accusantium quis aliquam quaerat accusamus laudantium debitis quasi ut ducimus? </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quasi cupiditate architecto excepturi atque necessitatibus eveniet sapiente omnis, quam nesciunt officia quaerat, voluptatum corporis delectus doloremque et praesentium dolore dolores!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla totam deleniti corrupti accusantium libero consequatur debitis perspiciatis doloremque beatae maiores, ipsum illum laudantium quibusdam voluptas expedita quidem porro modi. Facilis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor exercitationem quo veniam quae, ab quasi similique, quisquam veritatis necessitatibus accusamus, quia temporibus. Mollitia officiis et sint excepturi perspiciatis voluptatem placeat.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique magnam nihil modi soluta iure. Ad enim vero, laboriosam quaerat, nam quos labore omnis eveniet atque obcaecati eius repellat, consequatur in!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus ipsa nihil a deserunt? Quisquam eligendi illo nobis eveniet natus commodi neque laboriosam, dignissimos molestiae et illum ad sit aliquid incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sequi excepturi quod rem necessitatibus commodi mollitia veniam. Cupiditate eveniet iste, officia laboriosam animi aut voluptatem a molestias repudiandae eligendi id.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit eaque animi excepturi vero, eligendi placeat aliquid nemo assumenda iste a voluptates eveniet perferendis exercitationem quam neque. Incidunt, ratione sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem aut quae voluptatum illum laboriosam aliquam deleniti incidunt aperiam corrupti saepe autem similique, officiis dolores amet consequuntur sint quam ad nisi!</p>
+</body>
+</html>
