@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /*configurações aparelho empe (portrait)*/
+
+body {
+    background-image: url(/exercicios/ex026/mq002/imagens/cev-portrait.jpg);
+    background-position: center bottom;
+}
