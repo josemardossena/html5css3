@@ -1,8 +1,22 @@
 @charset "UTF-8";
 
-/*configurações aparelho deitado (landscape)*/
+/*configuracoes gerais*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-body{
-    background-image: url(/exercicios/ex026/mq002/imagens/cev-landscape.jpg);
-    background-position: left bottom;
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+} 
+
+h1 {
+    color: white;
+    text-shadow: 3px 3px 0px #1526a7 ;
+    padding: 10px;
 }
